@@ -16,4 +16,5 @@ class Student  {
     val age=2024-yearofbirth
     println(s"Age is $age")
   }
+  def sto
 }

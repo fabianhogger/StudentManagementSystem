@@ -10,4 +10,8 @@ object Interact  extends App{
   all.remStudent(student)
   all.listStudents()
 
+  val fileWriter = new FileWriter(new File("/tmp/hello.txt"))
+  fileWriter.write("hello there")
+  fileWriter.close()
+
 }
