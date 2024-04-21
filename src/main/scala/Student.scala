@@ -9,12 +9,21 @@ class Student  {
   def setAge(num:Int):Unit={
     yearofbirth=num
   }
-  def getName(): Unit={
+  def getName(): String={
+     s"$name,$surname"
+  }
+  def getAge(): String ={
+    val age=2024-yearofbirth
+     age.toString
+  }
+
+  def printName(): Unit = {
     println(s"Student is called $name,$surname")
   }
-  def getAge(): Unit={
-    val age=2024-yearofbirth
+
+  def printAge(): Unit = {
+    val age = 2024 - yearofbirth
     println(s"Age is $age")
   }
-  def sto
+
 }

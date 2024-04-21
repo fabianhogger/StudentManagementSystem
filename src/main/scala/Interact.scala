@@ -1,17 +1,17 @@
 object Interact  extends App{
   val student=new Student()
-  student.setName("Bob","Vans")
+  student.setName("A","Cramer")
   student.setAge(1980)
-  student.getAge()
-  student.getName()
+  student.printAge()
+  student.printName()
   val all=StudentDB()
   all.addStudent(student)
   all.listStudents()
-  all.remStudent(student)
+  all.storeData()
+  all.flush()
+  all.listStudents()
+  all.loadData()
   all.listStudents()
 
-  val fileWriter = new FileWriter(new File("/tmp/hello.txt"))
-  fileWriter.write("hello there")
-  fileWriter.close()
 
 }
